@@ -16,7 +16,7 @@ Console.WriteLine("direct invoke success");
 try
 {
     defaultDbContext.Set<LogicDatabaseEntity>().Where(o => o.Id == "123")
-        .LogicDeleteAsync();
+        .LogicDelete();
     Console.WriteLine("extension invoke success");
 }
 catch (Exception e)
